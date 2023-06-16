@@ -1,8 +1,11 @@
 #include <stdio.h>
 /**
-* main - This the main function
-* description: The entry point of my program
-* return: 0 
+* main - the entry point of the program
+* @void: we do not have any args
+*
+* Description: all program logic goes inside main function
+* our program is simple and for education purpose only
+* Return: nothing! - 0 as a retcode
 */
 int main(void)
 {
