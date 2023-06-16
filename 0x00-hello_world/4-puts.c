@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
 * main - This the main function
-* desciption: The entry point of my program
-* @void does not receive any args
-* return: always 0
+* description: The entry point of my program
+* return: 0 
 */
 int main(void)
 {
