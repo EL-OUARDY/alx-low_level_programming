@@ -11,9 +11,9 @@ int print_last_digit(int n)
 
 	last = n % 10;
 	if (last < 0)
-	}
+	{
 		/* in case the given number is negative */
 		last = last * -1;
 	}
-return (last);
+	return (last);
 }
