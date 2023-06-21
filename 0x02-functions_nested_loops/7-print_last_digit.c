@@ -15,5 +15,6 @@ int print_last_digit(int n)
 		/* in case the given number is negative */
 		last = last * -1;
 	}
+	_putchar(last + '0');
 	return (last);
 }
