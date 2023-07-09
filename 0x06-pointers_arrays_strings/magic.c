@@ -85,7 +85,7 @@
   <meta name="current-catalog-service-hash" content="82c569b93da5c18ed649ebd4c2c79437db4611a6a1373e805a3cb001c64130b7">
 
 
-  <meta name="request-id" content="9582:6F15:11D86F0:17E5B02:64A01D18" data-pjax-transient="true"/><meta name="html-safe-nonce" content="40e8e0c643e272c9e59e1aad44b847c2c9a4691540c4669bd2601429b4c5ef60" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI5NTgyOjZGMTU6MTFEODZGMDoxN0U1QjAyOjY0QTAxRDE4IiwidmlzaXRvcl9pZCI6Ijg5MjMxOTU5MjM4MjIwMjYwMDgiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="6f92ac672589d8acdec225478b81a8714156455e403c62c19f95392ef0ddae57" data-pjax-transient="true"/>
+  <meta name="request-id" content="A8F0:35CB:19A9594:23AE018:64A01D79" data-pjax-transient="true"/><meta name="html-safe-nonce" content="939d128702b4e754fcaa87b5a818f6562ea45dcbbe901a2a97a0b57b8cd8c2a2" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJBOEYwOjM1Q0I6MTlBOTU5NDoyM0FFMDE4OjY0QTAxRDc5IiwidmlzaXRvcl9pZCI6IjQzOTExNDkzMTUwMDU4ODE3MjEiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="fd79d9a76f94235c24d302ab0fde82452b917b7a9792fd2a575f13cd865529fe" data-pjax-transient="true"/>
 
 
     <meta name="hovercard-subject-tag" content="repository:53371980" data-turbo-transient>
@@ -597,7 +597,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="k+xdcdrJOM47QXHvdw5xZZOGTOwBshJpXTLxFWxzebbGA09ld6up7AtciqHYF+OxYy+EBh/1PfZMFxN+7bJugg==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="tDwOFVrs1UsFjbs1F5uv6RAjzXNoXK+J/h94V3SmGUT2HUG3rki24E94smy4SGzs0ulEMNDFDjlFbIXRWW7a5Q==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -1359,80 +1359,17 @@
     <include-fragment src="/alx-tools/make_magic_happen/spoofed_commit_check/d271142e19759f9fe16425cd2091192cc1712a84" data-test-selector="spoofed-commit-check"></include-fragment>
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-  
-  <div class="Box-header Details js-details-container">
-      <div class="d-flex flex-items-center">
-        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
-          <a rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/jbarbier/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jbarbier"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/3643278?s=48&amp;v=4" width="24" height="24" alt="@jbarbier" /></a>
-        </span>
-        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
-          <div class="css-truncate css-truncate-overflow">
-            <a class="text-bold Link--primary" rel="contributor" data-hovercard-type="user" data-hovercard-url="/users/jbarbier/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/jbarbier">jbarbier</a>
+  <include-fragment src="/alx-tools/make_magic_happen/contributors/master/magic.c" class="commit-loader">
+    <div class="Box-header d-flex flex-items-center">
+      <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
+      <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
+    </div>
 
-              <span class="markdown-title">
-                <a data-pjax="true" title="Update magic.c" class="Link--secondary" href="/alx-tools/make_magic_happen/commit/d271142e19759f9fe16425cd2091192cc1712a84">Update magic.c</a>
-              </span>
-          </div>
-
-
-          <span class="ml-2">
-            <include-fragment accept="text/fragment+html" src="/alx-tools/make_magic_happen/commit/d271142e19759f9fe16425cd2091192cc1712a84/rollup?direction=e" class="d-inline"></include-fragment>
-          </span>
-        </div>
-        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
-          <span class="d-none d-md-inline">
-            <span>Latest commit</span>
-            <a class="text-small text-mono Link--secondary" href="/alx-tools/make_magic_happen/commit/d271142e19759f9fe16425cd2091192cc1712a84" data-pjax>d271142</a>
-            <span itemprop="dateModified"><relative-time datetime="2016-10-27T20:43:24Z" class="no-wrap">Oct 27, 2016</relative-time></span>
-          </span>
-
-          <a data-pjax href="/alx-tools/make_magic_happen/commits/master/magic.c" class="ml-3 no-wrap Link--primary no-underline">
-            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
-    <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path>
-</svg>
-            <span class="d-none d-sm-inline">
-              <strong>History</strong>
-            </span>
-          </a>
-        </div>
-      </div>
-
-  </div>
-
-  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
-    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
-      <summary class="Link--primary">
-        <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
-    <path d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z"></path>
-</svg>
-        <strong>1</strong>
-        
-        contributor
-      </summary>
-      <details-dialog
-        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-        aria-label="Users who have contributed to this file"
-        src="/alx-tools/make_magic_happen/contributors-list/master/magic.c" preload>
-        <div class="Box-header">
-          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-    <path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path>
-</svg>
-          </button>
-          <h3 class="Box-title">
-            Users who have contributed to this file
-          </h3>
-        </div>
-        <include-fragment>
-          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
-  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
-  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
-</svg>
-        </include-fragment>
-      </details-dialog>
-    </details>
-  </div>
-</div>
+    <div class="Box-body d-flex flex-items-center" >
+      <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
+      <span class="color-fg-danger h6 loader-error">Cannot retrieve contributors at this time</span>
+    </div>
+</include-fragment></div>
 
 
 
@@ -1474,7 +1411,7 @@
     <div class="d-flex">
         
 <div class="ml-1" >
-  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-parent js-update-url-with-hash " data-turbo="false" action="/alx-tools/make_magic_happen/edit/master/magic.c" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wob3o9-Alidl8Fyw-HGVtAICIphqI2tgNfG6JpzpytMdzMRnKADwGNQAlm3K-iRPWl1zKFoL15jXaMSn9TM4zg" autocomplete="off" />
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="BtnGroup-parent js-update-url-with-hash " data-turbo="false" action="/alx-tools/make_magic_happen/edit/master/magic.c" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="WQYDKTgunZUi_gxS3-2M7WW8roAyP2ynn1ayP3VgahlXgRUYw-jr9bj8uo_vOeXCH3fGn54z-f40Z_4QblbF9A" autocomplete="off" />
       <button title="You must be signed in to make or propose changes" data-hotkey="e" data-disable-with="" type="submit" disabled="disabled" data-view-component="true" class="btn-sm BtnGroup-item btn">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
     <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
 </svg>
@@ -1484,7 +1421,7 @@
 </summary>    <div class="SelectMenu right-0">
       <div class="SelectMenu-modal width-full">
         <div class="SelectMenu-list SelectMenu-list--borderless py-2">
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="SelectMenu-item js-update-url-with-hash " data-turbo="false" action="/alx-tools/make_magic_happen/edit/master/magic.c" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="XoMcPdbKwGwXTS3Y6cl_ScpVdQnul6jE-AxtvycyzKeByS_5IUqmU6a95wXbQs6ykgokud6_FDwalRM-Tug-ug" autocomplete="off" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="SelectMenu-item js-update-url-with-hash " data-turbo="false" action="/alx-tools/make_magic_happen/edit/master/magic.c" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="M_I-qV2tTOejr6M6WEO0he0PBskqa5Cs9cyP-zkUtWU9dSiYpms6hzmtFedol92ql8Ru1oZnBfVe_cPUIiIaiA" autocomplete="off" />
               <button title="You must be signed in to make or propose changes" type="submit" disabled="disabled" data-view-component="true" class="btn-invisible btn width-full d-flex flex-justify-between color-fg-muted text-normal p-0">    <div class="mr-5">Edit this file</div>
               <div class="color-fg-muted">E</div>
 </button></form>
