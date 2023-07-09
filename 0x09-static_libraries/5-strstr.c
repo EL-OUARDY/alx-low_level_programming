@@ -1,1 +1,10 @@
-char *_strstr(char *haystack, char *needle);
+/**
+ * _strstr - function
+ * @haystack: input
+ * @needle: input
+ * Return: result
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	return (haystack);
+}
