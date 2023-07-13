@@ -4,7 +4,7 @@
  * char *str_concat - concatenate two string
  * @s1: input string
  * @s2: input string
- * Description: allocated space in memory which contains 
+ * Description: allocated space in memory which contains
  * the contents of s1, followed by the contents of s2, and null terminated
  * Return: a pointer to the allocated memory space
  */
@@ -12,6 +12,11 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int i, size1, size2;
 	char *p;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	size1 = size2  = 0;
 	while (s1[size1] != '\0')
