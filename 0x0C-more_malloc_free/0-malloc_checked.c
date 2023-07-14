@@ -3,7 +3,6 @@
 /**
  * void *malloc_checked - allocates memory using malloc
  * @b: number of bytes to allocate
- * @c: a character
  * Description: dynamic allocation of memory with a given number
  * Return: a pointerto the allocated memory
  */
