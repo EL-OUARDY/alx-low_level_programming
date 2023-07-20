@@ -6,7 +6,7 @@
  * print_strings - a function that prints strings
  * @separator: a string to separate numbers
  * @n: the count of variable arguments
- * @...: given string variable arguments to SUM
+ * @...: given string variable arguments
  * Description: prints all passed string variable arguments
  * separated by a given separator
  * Return: Nothing
