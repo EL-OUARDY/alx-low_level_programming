@@ -1,0 +1,7 @@
+#ifndef HEADER_FUNC
+#define HEADER_FUNC
+
+int _putchar(char c);
+void print_name(char *name, void (*f)(char *));
+
+#endif
