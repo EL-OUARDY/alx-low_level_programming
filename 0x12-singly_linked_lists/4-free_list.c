@@ -3,23 +3,20 @@
 #include "lists.h"
 
 /**
- * print_list - print a singly linked list
- * @h: the head of the targeted list
- * Description: go through all list nodes and print its data
- * Return: output the number of nodes
+ * free_list - free a list
+ * @head: the head of the targeted list
+ * Description: Free all list nodes from memory
+ * Return: Nothing
 */
-size_t print_list(const list_t *h)
+void free_list(list_t *head)
 {
-	size_t nb_count = 0;
+	list_t *current_node = head;
+	list_t *next_node;
 
-	while (h != NULL)
+	while (current_node != NULL)
 	{
-		if (h->str == NULL)
-			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		nb_count++;
+		next_node = current_node->next;
+		free(current_node);
+		current_node = next_node;
 	}
-	return (nb_count);
 }
