@@ -70,6 +70,9 @@ char *ClearString(char *str)
 	len = StringLength(str);
 	len -= CountExtraSpace(str);
 
+	if (len <= 0)
+		return (NULL);
+
 	cleared_string = (char *)malloc(sizeof(char) * len + 1);
 
 	if (cleared_string == NULL)
