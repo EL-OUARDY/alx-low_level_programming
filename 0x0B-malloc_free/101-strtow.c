@@ -15,8 +15,9 @@ int CountExtraSpace(char *str);
  */
 char **strtow(char *str)
 {
-	int i, words_count = 0;
+	int i, j, words_count = 0;
 	char **words;
+	char *word;
 	char *cleared_string;
 
 	if (str == NULL || str[0] == '\0')
@@ -43,17 +44,21 @@ char **strtow(char *str)
 	/* insert individual words to words array */
 	for (i = 0; i < words_count; i++)
 	{
-		char *word = GetSingleWord(cleared_string, i);
+		word = GetSingleWord(cleared_string, i);
 		/* reserve memory for each individual string */
 		words[i] = (char *)malloc(sizeof(char) * StringLength(word) + 1);
 		if (words[i] == NULL)
 			return (NULL);
 
-		words[i] = word;
+		/* words[i] = word; */
+		for (j = 0; word[j]; j++)
+			words[i][j] = word[j];
+		words[i][j] = '\0';
 	}
 	words[i] = '\0';
 
 	free(cleared_string);
+	free(word);
 	return (words);
 }
 
