@@ -53,6 +53,7 @@ char **strtow(char *str)
 	}
 	words[i] = '\0';
 
+	free(cleared_string);
 	return (words);
 }
 
