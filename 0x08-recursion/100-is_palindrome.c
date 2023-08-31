@@ -10,11 +10,13 @@ int _strlen(char *s);
  */
 int is_palindrome(char *s)
 {
+	int start, end;
+
 	if (s[0] == '\0')
 		return (1);
 
-	int start = 0;
-	int end = _strlen(s);
+	start = 0;
+	end = (_strlen(s) - 1);
 
 	return (is_palindrome_helper(s, start, end));
 }
