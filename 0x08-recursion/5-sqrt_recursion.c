@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_recursion - returns the natural square root of a number,
+ * sqrt_recursion_helper - returns the natural square root of a number,
  * using recursion.
  * @num: number parameter
  * @guess: number parameter
