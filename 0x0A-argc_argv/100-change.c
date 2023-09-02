@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - change caculator
  * @argc: the counter of the passed arguments
