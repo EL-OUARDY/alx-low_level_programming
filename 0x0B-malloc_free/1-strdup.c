@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		size++;
 
 	/* allocate memory for the new string */
-	ptr = (char *) malloc(sizeof(char) * size);
+	ptr = (char *) malloc(sizeof(char) * (size + 1));
 	if (ptr == NULL)
 		return (NULL);
 
