@@ -45,7 +45,7 @@ char **strtow(char *str)
 	{
 		word = GetSingleWord(cleared_string, i);
 		/* reserve memory for each individual string */
-		words[i] = (char *)malloc(sizeof(char) * StringLength(word) + 1);
+		words[i] = (char *)malloc(sizeof(char) * StringLength(word));
 		if (words[i] == NULL)
 			return (NULL);
 
