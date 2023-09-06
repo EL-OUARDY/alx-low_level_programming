@@ -38,7 +38,7 @@ char **strtow(char *str)
 	words_count++;
 
 	/* reserve memory for words*/
-	words = (char **)malloc(sizeof(char *) * words_count + 1);
+	words = (char **)malloc(sizeof(char *) * words_count);
 
 	/* insert individual words to words array */
 	for (i = 0; i < words_count; i++)
@@ -54,7 +54,7 @@ char **strtow(char *str)
 			words[i][j] = word[j];
 		words[i][j] = '\0';
 	}
-	/* words[i] = NULL; */
+	words[i] = NULL;
 
 	return (words);
 }
