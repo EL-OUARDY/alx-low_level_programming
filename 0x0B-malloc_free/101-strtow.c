@@ -54,10 +54,8 @@ char **strtow(char *str)
 			words[i][j] = word[j];
 		words[i][j] = '\0';
 	}
-	words[i] = '\0';
+	words[i] = NULL;
 
-	free(cleared_string);
-	free(word);
 	return (words);
 }
 
