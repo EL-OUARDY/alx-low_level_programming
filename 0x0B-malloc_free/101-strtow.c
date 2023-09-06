@@ -38,14 +38,14 @@ char **strtow(char *str)
 	words_count++;
 
 	/* reserve memory for words*/
-	words = (char **)malloc(sizeof(char *) * words_count);
+	words = (char **)malloc(sizeof(char *) * (words_count + 1));
 
 	/* insert individual words to words array */
 	for (i = 0; i < words_count; i++)
 	{
 		word = GetSingleWord(cleared_string, i);
 		/* reserve memory for each individual string */
-		words[i] = (char *)malloc(sizeof(char) * StringLength(word));
+		words[i] = (char *)malloc(sizeof(char) * (StringLength(word) + 1));
 		if (words[i] == NULL)
 			return (NULL);
 
