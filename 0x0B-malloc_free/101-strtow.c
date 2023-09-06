@@ -54,7 +54,7 @@ char **strtow(char *str)
 			words[i][j] = word[j];
 		words[i][j] = '\0';
 	}
-	words[i] = NULL;
+	/* words[i] = NULL; */
 
 	return (words);
 }
