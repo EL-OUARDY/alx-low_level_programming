@@ -41,7 +41,7 @@ printf("Gender: %c\n", h.gender);
 
 ```
 
-**Twitter:** https://twitter.com/_ELOUARDY\
+**Twitter:** https://twitter.com/_ELOUARDY  
 **Email:** ouadia@el-ouardy.com
 
 > I Love .md Files!!
