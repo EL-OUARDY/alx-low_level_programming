@@ -9,12 +9,15 @@
 * Description: a declaration of a custom struct thar holds dog's fields
 * and give it an alias using typedef
 */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t;
+};
+
+/* create an alias for the dog struct */
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
