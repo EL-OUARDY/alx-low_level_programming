@@ -2,6 +2,7 @@
 0x0F. C - Function pointers
 ### What Are Function pointers:
 A function pointer in C programming is a variable that stores the address of a function and allows you to invoke it indirectly through the variable. This feature is especially handy when you want to use functions as parameters for other functions or store them in data structures like arrays or linked lists. \
+Function pointers are widely used as callbacks when passing them as a parameter to other functions allowing you to perform various tasks such as event handling. \
 To use pointers to functions in C, follow these steps:
 
 **1- Declare a function prototype:**
