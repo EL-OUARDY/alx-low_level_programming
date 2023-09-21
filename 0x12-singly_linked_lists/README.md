@@ -59,7 +59,7 @@ int main() {
     return 0;
 }
 ```
-The code above creates a singly linked list with three nodes and traverse over the list to print its elements.
+The code above creates a singly linked list with three nodes and traverse through the list to print its elements.
 
 ## Use and benefits
 
