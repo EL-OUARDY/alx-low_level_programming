@@ -4,7 +4,7 @@
 
 /**
  * sum_listint - sum of list nodes
- * @h: the head of the targeted list
+ * @head: the head of the targeted list
  * Description: calculate the sum of all node data
  * Return: output the sum
 */
