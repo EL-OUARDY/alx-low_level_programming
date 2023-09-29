@@ -13,7 +13,7 @@ Common Bit Operations.
 ## Common Bit Operations
 #### 1. Bitwise AND (&)
 Sets a bit to 1 if both corresponding bits are 1.
-```c
+```bash
 # Binary representation of 5: 0101
 # Binary representation of 3: 0011
 result = 5 & 3  # Bitwise AND
@@ -22,7 +22,7 @@ result = 5 & 3  # Bitwise AND
 ```
 #### 2. Bitwise OR (|)
 Sets a bit to 1 if at least one of the corresponding bits is 1.
-```c
+```bash
 # Binary representation of 5: 0101
 # Binary representation of 3: 0011
 result = 5 | 3  # Bitwise OR
@@ -31,7 +31,7 @@ result = 5 | 3  # Bitwise OR
 ```
 #### 3. Bitwise XOR (^)
 Sets a bit to 1 if exactly one of the corresponding bits is 1.
-```c
+```bash
 # Binary representation of 5: 0101
 # Binary representation of 3: 0011
 result = 5 ^ 3  # Bitwise XOR
@@ -40,7 +40,7 @@ result = 5 ^ 3  # Bitwise XOR
 ```
 #### 4. Bitwise NOT (~)
 Flips the bits, changing 0 to 1 and 1 to 0.
-```c
+```bash
 # Binary representation of 5: 0101
 result = ~5  # Bitwise NOT
 # Result (binary): 1010 (Note: The number of bits depends on the platform)
@@ -48,7 +48,7 @@ result = ~5  # Bitwise NOT
 ```
 #### 5. Left Shift (<<)
 Shifts bits to the left, filling in with zeros.
-```c
+```bash
 # Binary representation of 5: 0101
 result = 5 << 2  # Left shift by 2 positions
 # Result (binary): 010100
@@ -56,7 +56,7 @@ result = 5 << 2  # Left shift by 2 positions
 ```
 #### 6. Right Shift (>>)
 Shifts bits to the right, filling in with zeros or the sign bit.
-```c
+```bash
 # Binary representation of -8 (assuming 8-bit representation): 11111000
 result = -8 >> 2  # Right shift by 2 positions
 # Result (binary): 11111110 (Sign extension for negative numbers)
