@@ -24,7 +24,9 @@ unsigned int binary_to_uint(const char *b)
         while (*b)
         {
                 if (*b == '1')
+		{
                         decimal += _pow(2, length - 1);
+		}
                 else if (*b != '0')
                         return (0);
                 b++;
