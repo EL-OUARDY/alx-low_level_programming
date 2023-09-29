@@ -9,8 +9,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int bits[64]; /* 64-bit integer */
-	int index = 0;
+	int digit;
 
 	/* Special case: print '0' for input 0 */
 	if (n == 0)
@@ -21,12 +20,8 @@ void print_binary(unsigned long int n)
 
 	while (n > 0)
 	{
-		bits[index] = n & 1; /* Get the least significant bit (0 or 1) */
+		digit = n & 1; /* Get the least significant bit (0 or 1) */
+		_putchar(digit + '0');
 		n >>= 1; /* Right-shift by 1 to shift to the next bit */
-		index++;
 	}
-
-	/* Print the binary representation in reverse order */
-	for (int i = index - 1; i >= 0; i--)
-		_putchar(bits[i] + '0');
 }
