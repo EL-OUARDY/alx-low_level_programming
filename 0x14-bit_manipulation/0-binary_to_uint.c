@@ -11,29 +11,30 @@ int _pow(int base, unsigned int exponent);
  */
 unsigned int binary_to_uint(const char *b)
 {
-        unsigned int decimal = 0, length;
+	unsigned int decimal = 0, length;
 
-        /* check string */
-        if (b == NULL)
-                return (0);
+	/* check string */
+	if (b == NULL)
+		return (0);
 
-        /* string length */
-        for (length = 0; b[length]; length++);
+	/* string length */
+	for (length = 0; b[length]; length++)
+		;
 
-        /* loop over binary digits */
-        while (*b)
-        {
-                if (*b == '1')
+	/* loop over binary digits */
+	while (*b)
+	{
+		if (*b == '1')
 		{
-                        decimal += _pow(2, length - 1);
+			decimal += _pow(2, length - 1);
 		}
-                else if (*b != '0')
-                        return (0);
-                b++;
-                length--;
-        }
+		else if (*b != '0')
+			return (0);
+		b++;
+		length--;
+	}
 
-        return (decimal);
+	return (decimal);
 }
 
 /**
@@ -45,13 +46,13 @@ unsigned int binary_to_uint(const char *b)
  */
 int _pow(int base, unsigned int exponent)
 {
-        unsigned int i, result = 1;
+	unsigned int i, result = 1;
 
-        if (exponent == 0)
-                return (1);
+	if (exponent == 0)
+		return (1);
 
-        for (i = 0; i < exponent; i++)
-                result *= base;
+	for (i = 0; i < exponent; i++)
+		result *= base;
 
-        return result;
+	return (result);
 }
