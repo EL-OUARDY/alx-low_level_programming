@@ -9,19 +9,27 @@
  */
 void print_binary(unsigned long int n)
 {
-	int digit;
+	unsigned long int digit;
+	int i, flag = 0;
 
-	/* Special case: print '0' for input 0 */
 	if (n == 0)
 	{
-		_putchar('0');
+		putchar('0'); /* Special case: print '0' for input 0 */
 		return;
 	}
 
-	while (n > 0)
+	for (i = 63; i >= 0; i--)
 	{
-		digit = n & 1; /* Get the least significant bit (0 or 1) */
-		_putchar(digit + '0');
-		n >>= 1; /* Right-shift by 1 to shift to the next bit */
+		digit = n >> i; /* Right-shift by i to shift to the next bit */
+
+		if (digit & 1)
+		{
+			putchar('1');
+			flag = 1;
+		}
+		else if (flag == 1)
+			putchar('0');
 	}
+	if (flag != 1)
+		putchar('0');
 }
