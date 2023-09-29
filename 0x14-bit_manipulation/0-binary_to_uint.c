@@ -9,7 +9,6 @@ int _pow(int base, unsigned int exponent);
  * Description: converts a binary number to an unsigned int
  * Return: the decimal number or 0 if b is null or b is invalid
  */
-
 unsigned int binary_to_uint(const char *b)
 {
         unsigned int decimal = 0, length;
@@ -25,9 +24,7 @@ unsigned int binary_to_uint(const char *b)
         while (*b)
         {
                 if (*b == '1')
-                {
                         decimal += _pow(2, length - 1);
-                }
                 else if (*b != '0')
                         return (0);
                 b++;
