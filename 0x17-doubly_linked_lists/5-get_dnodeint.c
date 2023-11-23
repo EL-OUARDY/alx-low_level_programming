@@ -11,6 +11,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *temp;
 	unsigned int i = 0;
 
+	/* always make sure head pointer is at the start node */
+	if (head != NULL)
+		while (head->prev != NULL)
+			head = head->prev;
+
 	temp = head;
 	while (temp)
 	{

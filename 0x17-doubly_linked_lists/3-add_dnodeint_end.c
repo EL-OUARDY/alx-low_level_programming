@@ -20,6 +20,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	new_node->n = n;
 	new_node->next = NULL;
 
+	/* always make sure head pointer is at the start node */
+	if (*head != NULL)
+		while ((*head)->prev != NULL)
+			*head = (*head)->prev;
+
 	if (*head == NULL) /* list empty */
 	{
 		new_node->prev = NULL;
