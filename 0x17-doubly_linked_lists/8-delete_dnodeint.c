@@ -12,8 +12,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	dlistint_t *temp;
 	unsigned int i = 0;
 
-	/* always make sure head pointer is at the start node */
-	if (*head != NULL)
+	if (*head != NULL) /* make sure head pointer is at the start node */
 		while ((*head)->prev != NULL)
 			*head = (*head)->prev;
 
@@ -29,11 +28,18 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 					*head = (*head)->next;
 					(*head)->prev = NULL;
 				}
-				else /* last node in the list */
+				else /* list contains only one node */
 					*head = NULL;
 				free(temp); /* deallocate memory */
 				return (1);
 			}
+			if (temp->next == NULL) /* last node case */
+			{
+				(temp->prev)->next = NULL;
+				free(temp);
+				return (1);
+			}
+
 			(temp->prev)->next = temp->next;
 			(temp->next)->prev = temp->prev;
 			free(temp); /* deallocate memory */
@@ -42,6 +48,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		i++;
 		temp = temp->next; /* to the next node */
 	}
-
 	return (-1);
 }
