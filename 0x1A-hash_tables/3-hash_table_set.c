@@ -36,7 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			if (strcmp(temp->key, key) == 0) /* match */
 			{
-				temp->key = strdup(key); /* update the existed node */
+				ht->array[index]->value = strdup(value); /* update value of node */
 				free(new_node->key);
 				free(new_node->value);
 				free(new_node);
