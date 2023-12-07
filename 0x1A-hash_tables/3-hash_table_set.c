@@ -12,7 +12,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *new_node, *temp;
 
-	/* validate inputs */
 	if (key == NULL || *key == '\0' || ht == NULL || value == NULL)
 		return (0);
 	/* create hash_node_t node */
@@ -21,6 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
+
 	index = key_index((unsigned char *)key, ht->size); /* get index */
 	if (ht->array[index] == NULL) /* empty space */
 	{ /* add the new node */
@@ -31,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else /* collision */
 	{
 		temp = ht->array[index]; /* check if a node already has the same key */
-		while (temp->next) /* loop over each node */
+		while (temp) /* loop over each node */
 		{
 			if (strcmp(temp->key, key) == 0) /* match */
 			{
