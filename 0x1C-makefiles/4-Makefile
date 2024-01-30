@@ -1,0 +1,21 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) #  substitutes the .c extension of each file listed in the variable SRC with the .o extension
+NAME = school
+RM = rm -f # delete files command/program
+CFLAGS = -Wall -Werror -Wextra -pedantic # compiler flags
+
+all: $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME) # compile with flags
+
+clean:
+	$(RM) *.swp # delete Vim temp files
+	$(RM) *~ # delete Emacs temp files
+	$(RM) $(NAME) # delete executable file
+
+oclean:
+	$(RM) $(OBJ) # delete object files
+
+fclean: clean oclean # delete editor temp files, executable and object files
+
+re: oclean all # forces recompilation of all source files
