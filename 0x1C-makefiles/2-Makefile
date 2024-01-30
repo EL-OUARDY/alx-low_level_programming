@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) #  substitutes the .c extension of each file listed in the variable SRC with the .o extension
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
