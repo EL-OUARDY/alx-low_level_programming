@@ -7,3 +7,7 @@
 # Ignore compiled code
 *.o
 *.out
+*.exe
+
+# vscode config
+.vscode
