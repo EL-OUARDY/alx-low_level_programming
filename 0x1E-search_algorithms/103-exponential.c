@@ -32,12 +32,12 @@ int exponential_search(int *array, size_t size, int value)
 
 		i *= 2;
 
-		if (array[i] > value) /* passed the target value */
+		if (array[i] > value || i >= size) /* passed the target value */
 		{
 			low = (i / 2);
 			high = (i >= size) ? (size - 1) : i;
 			printf("Value found between indexes [%lu] and [%lu]\n", low, high);
-			// apply binary search
+			/* apply binary search */
 			return (do_binary_search(array, value, low, high));
 		}
 	}
@@ -103,3 +103,4 @@ void print_array(int *array, size_t left, size_t right)
 			printf("\n");
 	}
 }
+
