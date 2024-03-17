@@ -33,7 +33,7 @@ int advanced_binary(int *array, size_t size, int value)
  */
 int bs_helper(int *array, int value, size_t left, size_t right)
 {
-	size_t mid, i;
+	size_t mid;
 
 	if (!array)
 		return (-1);
