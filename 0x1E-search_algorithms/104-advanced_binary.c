@@ -2,7 +2,7 @@
 
 /* function declarations */
 void print_array(int *array, size_t left, size_t right);
-int do_binary_search(int *array, size_t left, size_t right, int value);
+int bs_helper(int *array, int value, size_t left, size_t right);
 
 /**
  * advanced_binary - searches for a value in an array of integers
@@ -19,11 +19,11 @@ int advanced_binary(int *array, size_t size, int value)
 		return (-1);
 	}
 
-	return (do_binary_search(array, 0, size - 1, value));
+	return (bs_helper(array, value, 0, size - 1));
 }
 
 /**
- * do_binary_search - searches for a value in a sorted array (ASC)
+ * bs_helper - searches for a value in a sorted array (ASC)
  * @array: pointer to the first element of the array to search in
  * @left: leftmost index of the current search range
  * @right: rightmost index of the current search range
@@ -31,24 +31,28 @@ int advanced_binary(int *array, size_t size, int value)
  * Description: searching with binary search algorithm
  * Return: the index where @value is located, otherwise -1
  */
-int do_binary_search(int *array, size_t left, size_t right, int value)
+int bs_helper(int *array, int value, size_t left, size_t right)
 {
-	if (right >= left)
+	size_t mid, i;
+
+	if (!array)
+		return (-1);
+
+	mid = (left + right) / 2;
+
+	print_array(array, left, right);
+
+	if (array[left] == value)
+		return ((int)left);
+
+	if (array[left] != array[right])
 	{
-		size_t mid = left + (right - left) / 2;
-		print_array(array, left, right);
-
-		if (array[mid] == value)
-		{
-			return (mid);
-		}
-
-		if (array[mid] > value)
-		{
-			return (do_binary_search(array, left, mid - 1, value));
-		}
-
-		return (do_binary_search(array, mid + 1, right, value));
+		if (array[mid] < value)
+			return (bs_helper(array, value,
+							  mid + 1, right));
+		if (array[mid] >= value)
+			return (bs_helper(array, value,
+							  left, mid));
 	}
 
 	return (-1);
